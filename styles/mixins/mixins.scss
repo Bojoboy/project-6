@@ -1,0 +1,46 @@
+@mixin normal-text {
+	font-family: Arial;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+@mixin bigh {
+	font-family: Arial;
+  font-size: 51.2px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+@mixin mediumh {
+	font-family: Arial;
+  font-size: 35px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+@mixin smallh {
+	font-family: Arial;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+@mixin button {
+	@include normal-text;
+	color: $attention;
+	background-color: $akcent;
+	border-radius: 16px;
+}

@@ -1,0 +1,17 @@
+.footer {
+	background-color: $primary;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-cell {
+	display: flex;
+	flex-direction: column;
+
+	ul {
+		display: table-column;
+	}
+}

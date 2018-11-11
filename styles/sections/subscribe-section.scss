@@ -1,0 +1,45 @@
+.subscribe-section {
+	background-color: $attention;
+	padding: 30px 0;
+}
+
+.subscribe-content {
+	display: flex;
+	align-items: center;
+	
+	h3 {
+		@include smallh;
+		color: $primary;
+		padding-right: 30px;
+	}
+
+	form {
+		flex: 2;
+		display: flex;
+	}
+	.email-input {
+		letter-spacing: 1px;
+		color: #f0f8fb;
+		background-color: $attention;
+		border: none;
+		border-bottom: 1px solid $light-bg;
+		width: 70%;
+
+		&:focus {
+			outline: none !important;
+		}
+	}
+
+	::placeholder {
+		color: #f0f8fb;
+	}
+
+	.sub-btn {
+		background-color: $primary;
+		color: $attention;
+		border: none;
+		border-radius: 18px;
+		padding: 14px 62px;
+		width: 198px;
+	}
+}

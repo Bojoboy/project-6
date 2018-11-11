@@ -1,0 +1,70 @@
+.team-section {
+	background-color: $light-bg;
+}
+
+.team-content {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+	h3 {
+		margin: 108px 0;
+		@include mediumh;
+		color: $attention;
+	}
+}
+
+.team-grid {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 60px;
+
+	.team-cell {
+		position: relative;
+		width: 220px;
+		height: 220px;
+		background-color: #ede;
+		cursor: pointer;
+		opacity: .5;
+		transition: all 1s ease;
+		
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		&:hover {
+			opacity: 1;
+		}
+
+		&:hover span {
+			height: 40px;
+			transition: all 1s ease;
+			opacity: 1;
+		}
+
+		span {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			bottom: 0;
+			content: '';
+			height: 0;
+			width: 100%;
+			background-color: $decor;
+			color: #fff;
+			transition: all 1s ease;
+			opacity: 0;
+		}
+	}
+}

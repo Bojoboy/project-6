@@ -1,0 +1,29 @@
+.cross-content {
+	padding: 90px 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.logo {
+		width: 64px;
+		height: 48px;
+		background-image: url(images/svg/Composite-path.svg);
+		margin-bottom: 42px;
+	}
+
+	h3 {
+		@include mediumh;
+		color: $primary;
+	}
+
+	p {
+		@include normal-text;
+		color: $text-color;
+		text-transform: uppercase;
+	}
+}
+
